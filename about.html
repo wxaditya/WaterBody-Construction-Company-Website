@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | SAN ENGINEERINGS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/logo-colorfix.png">
+</head>
+<body>
+ 
+<header class="about-header">
+  <div class="hlogo-container">
+    <a href="index.html" class="hlogo-link">
+      <img src="assets/logo-colorfix.png" alt="Company Logo" class="logo-img">
+    </a>
+  </div>
+  <div class="menu-icon" id="menu-icon">
+  <span class="line line1"></span>
+  <span class="line line2"></span>
+  <span class="line line3"></span>
+</div>
+</header>
+
+<div class="section-bar">
+  <div class="section-bar-content">
+    <span class="line"></span>
+    <h2>ABOUT US</h2>
+    <span class="line"></span>
+  </div>
+</div>
+
+<section class="about-section" id="about">
+<div class="about-subheading">
+  <h3>Our Story</h3>
+</div>
+
+<div class="about-story" >
+  <p>
+    Our journey began in the wake of the global pandemic, a time that pushed many to rethink their paths. After over two decades of working as a supervisor and manager at a leading water body construction company in the industry — our founder decided it was time to build something of his own. With over 25+ years of experience, including managing international Water Body projects and overseeing constructions across major Indian cities, he took a leap of faith in 2020 and established his own Water Body—Design, Construction and Maintenance company.
+  </p>
+  <p>
+    What sets us apart is our priority to trust and perfection. We bring a deep commitment to precision, client satisfaction, and timely project delivery. Every site is personally overseen to ensure the highest standards and error-free execution. We believe in quality over profit—working with transparency, integrity, and a deep respect for our client’s vision.
+  </p>
+  <p>
+    Today, SAN Engineerings stands as a symbol of trust and reliability. We take pride in our journey, our people, and the partnerships we’ve built along the way. As we look to the future, we remain dedicated to pushing boundaries and shaping a better tomorrow.
+  </p>
+</div>
+</section>
+
+<section class="founder-message-section">
+  <div class="founder-message-box">
+    <div class="founder-message-heading">Founder's Message</div>
+
+    <div class="founder-message-content">
+      <div class="founder-message-text">
+        <i>"At SAN Engineerings, every project is personal to me. With years of hands-on experience, I make sure each water feature we build is done with care, quality, and attention to detail. We're not just building structures — we're creating something that brings beauty and peace to your space." </i> 
+      </div>
+      <div class="founder-signature">
+        <div class="founder-name">– Mr. ASWINI KUMAR NAYAK</div>
+        <div class="founder-designation">Founder & Project Head</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-choose-us-section">
+<div class="why-choose-us">
+  <h2>Why Choose Us</h2>
+</div>
+
+<div class="why-choose-points">
+  <div class="point"><span class="tick">✔</span> Led by 25+ Years of Industry Experience</div>
+  <div class="point"><span class="tick">✔</span> No Delays. No Excuses</div>
+  <div class="point"><span class="tick">✔</span> Zero Hidden Costs. 100% Transparency</div>
+  <div class="point"><span class="tick">✔</span> We Choose Quality Over Profit. Every Time</div>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <h3>sanengineerings.co.in</h3>
+  </div>
+  <div class="footer-bottom">
+    <p class="left">&copy; 2025 SAN ENGINEERINGS. All rights reserved.</p>
+    <div class="right">
+      <p class="developed">Developed by</p>
+      <p class="developer"><strong>ADITYA NAYAK</strong></p>
+      </div>
+  </div>
+</footer>
+
+<!-- Slide-out menu panel -->
+<div class="side-menu" id="side-menu">
+  <div class="side-menu-header">
+    <span class="close-icon" id="close-icon">&times;</span>
+  </div>
+
+  <div class="side-menu-body">
+    <ul class="side-menu-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html"><strong>ABOUT US</strong></a></li>
+      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+
+  <script src="js/script.js"></script>
+ <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const sideMenu = document.getElementById('side-menu');
+
+  menuIcon.addEventListener('click', () => {
+    sideMenu.classList.add('open');
+  });
+
+  closeIcon.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+  });
+</script>
+
+
+</body>
+</html>

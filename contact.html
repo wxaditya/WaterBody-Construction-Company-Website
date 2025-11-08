@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | SAN ENGINEERINGS</title>
+  <link rel="icon" type="image/png" href="assets/logo-colorfix.png">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+ <header class="about-header">
+  <div class="hlogo-container">
+    <a href="index.html" class="hlogo-link">
+      <img src="assets/logo-colorfix.png" alt="Company Logo" class="logo-img">
+    </a>
+  </div>
+  <div class="menu-icon" id="menu-icon">
+  <span class="line line1"></span>
+  <span class="line line2"></span>
+  <span class="line line3"></span>
+</div>
+</header>
+
+<div class="section-bar">
+  <div class="section-bar-content">
+    <span class="line"></span>
+    <h2>CONTACT US</h2>
+    <span class="line"></span>
+  </div>
+</div>
+
+<section class="contact-hero">
+  <div class="contact-hero-content">
+    <h1>Get in Touch With Us</h1>
+    <p>We’re here to help with all your water body construction needs</p>
+  </div>
+</section>
+
+<section class="contact-form-section" id="quote-contact">
+  <form action="https://formsubmit.co/engineeringssan@gmail.com" method="POST" id="contact-form">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+    
+    <h2>Send Us a Message</h2>
+    
+    <label for="name">Full Name <span class="required">*</span></label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email Address <span class="required">*</span></label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone Number <span class="required">*</span></label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="service">Service Type <span class="required">*</span></label>
+    <select id="service" name="service" required>
+      <option value="">-- Select a Service --</option>
+      <option value="design">Design</option>
+      <option value="construction">Construction</option>
+      <option value="maintenance">Maintenance</option>
+      <option value="consultation">Consultation</option>
+    </select>
+    
+    <label for="message">Message <span class="required">*</span></label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <button type="submit">Submit</button>
+    <p id="form-status" class="form-status"></p>
+  </form>
+</section>
+
+<section class="contact-info-section" id="contact-details">
+  <div class="contact-info-heading">
+  <h2>Contact Info</h2>
+</div>
+<div class="contact-info-rows">
+  <div class="info-row">
+    <div class="info-box">
+      <p>📞 <strong>Phone Number:</strong><br>
+  <a href="tel:+918595045458" class="contact-link">+91-8595045458</a>
+</p>
+
+    </div>
+    <div class="info-box">
+     <p>✉️ <strong>Email Address:</strong><br>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=engineeringssan@gmail.com" target="_blank" class="contact-link">
+  engineeringssan@gmail.com
+</a>
+</p>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-box">
+      <p>📍 <strong>Office Address:</strong><br>
+  <a href="https://maps.app.goo.gl/aSKSHb6MKpvEZza89?g_st=ac"
+     target="_blank" 
+     class="contact-link">
+    Ground Floor, H.No-578, Bans Mohalla,<br>Ghitorni, New Delhi - 110030
+  </a>
+</p>
+    </div>
+    <div class="info-box">
+      <p>🕒 <strong>Working Hours:</strong><br>Mon–Sat, 10 AM – 6 PM</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="map-section">
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=28.495542,77.138929&z=17&output=embed"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="directions-button-container">
+    <a href="https://maps.app.goo.gl/oTmT2hFdLERfV5GR6"
+       target="_blank" class="directions-button">
+      Get Directions
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <h3>sanengineerings.co.in</h3>
+  </div>
+  <div class="footer-bottom">
+    <p class="left">&copy; 2025 SAN ENGINEERINGS. All rights reserved.</p>
+    <div class="right">
+      <p class="developed">Developed by</p>
+      <p class="developer"><strong>ADITYA NAYAK</strong></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Slide-out menu panel -->
+<div class="side-menu" id="side-menu">
+  <div class="side-menu-header">
+    <span class="close-icon" id="close-icon">&times;</span>
+  </div>
+
+  <div class="side-menu-body">
+    <ul class="side-menu-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="contact.html"><strong>CONTACT US</strong></a></li>
+    </ul>
+  </div>
+
+
+  <script src="js/script.js"></script>
+  <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const sideMenu = document.getElementById('side-menu');
+
+  menuIcon.addEventListener('click', () => {
+    sideMenu.classList.add('open');
+  });
+
+  closeIcon.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+  });
+</script>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', function () {
+    status.textContent = "Sending your message...";
+    status.style.color = "#001d9e";
+  });
+</script>
+
+</body>
+</html>

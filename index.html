@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAN ENGINEERINGS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/logo-colorfix.png">
+</head>
+
+<body>
+
+<div id="splash-screen">
+  <video autoplay muted loop playsinline id="splash-video">
+    <source src="assets/2776522-uhd_2560_1440_30fps (1)~2.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="splash-content">
+    <p class="welcome-line">Welcome to</p>
+    <h1 class="company-name">SAN ENGINEERINGS</h1>
+  </div>
+</div>
+
+<main id="main-content">
+<header>
+  <div class="logo-container">
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo-colorfix.png" alt="Company Logo" class="logo-img">
+      <h1 class="logo-text">SAN ENGINEERINGS</h1>
+    </a>
+  </div>
+</header>
+
+
+<nav class="navbar" id="navbar">
+  <ul>
+    <li><a href="index.html"><strong style="font-size:16px;">HOME</strong></a></li>
+    <li><a href="about.html">ABOUT US</a></li>
+    <li><a href="services.html">SERVICES</a></li>
+    <li><a href="projects.html">PROJECTS</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+</nav>
+
+<section class="hero-section">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="assets/4124166-hd_1920_1080_24fps (1)~2.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="hero-content">
+    <h1>Make a Splash with Your Dream Pool</h1>
+    <p>Experts in construction, maintenance, and stunning design</p>
+    <a href="contact.html#quote-contact" class="cta-button">Get a Free Quote</a>
+  </div>
+</section>
+
+
+<section class="intro-section">
+  <div class="intro-content">
+    <h2>Crafting Pools, Creating Memories</h2>
+    <p>
+      With years of expertise in pool construction and maintenance, SAN Engineerings is committed to transforming your space into a stunning aquatic experience. Whether it’s building from scratch or maintaining your existing pool, we bring precision, trust, and style to every project.
+    </p>
+    <a href="about.html#about" class="learn-more">Learn More About Us</a>
+  </div>
+</section>
+
+<section class="welcome-banner">
+  <div class="welcome-content">
+    <h2>The Art of Pool Creation Starts With Us</h2>
+    <p>Dive Into Quality With Every Project</p>
+    <a href="contact.html#contact-details" class="contact-button">Contact Now</a>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <h3>sanengineerings.co.in</h3>
+  </div>
+  <div class="footer-bottom">
+    <p class="left">&copy; 2025 SAN ENGINEERINGS. All rights reserved.</p>
+    <div class="right">
+      <p class="developed">Developed by</p>
+      <p class="developer"><strong>ADITYA NAYAK</strong></p>
+    </div>
+  </div>
+</footer>
+</main>
+
+
+<script src="js/script.js"></script>
+
+<script>
+  window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+    const content = document.getElementById('main-content');
+
+    // First-time splash logic
+    if (!sessionStorage.getItem('splashShown')) {
+      sessionStorage.setItem('splashShown', 'true');
+
+      // Fade in content and fade out splash
+      setTimeout(() => {
+        content.style.opacity = '1';
+        splash.style.opacity = '0';
+        splash.style.pointerEvents = 'none';
+      }, 3000);
+
+      // Optional: remove splash after fade
+      setTimeout(() => {
+        splash.style.display = 'none';
+      }, 4000);
+    } else {
+      // Skip splash and show content immediately
+      splash.style.display = 'none';
+      content.style.opacity = '1';
+    }
+  });
+</script>
+
+
+</body>
+</html>

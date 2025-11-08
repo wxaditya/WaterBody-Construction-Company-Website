@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | SAN ENGINEERINGS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/logo-colorfix.png">
+</head>
+<body>
+ 
+<header class="about-header">
+  <div class="hlogo-container">
+    <a href="index.html" class="hlogo-link">
+      <img src="assets/logo-colorfix.png" alt="Company Logo" class="logo-img">
+    </a>
+  </div>
+  <div class="menu-icon" id="menu-icon">
+  <span class="line line1"></span>
+  <span class="line line2"></span>
+  <span class="line line3"></span>
+</div>
+</header>
+
+<div class="section-bar">
+  <div class="section-bar-content">
+    <span class="line"></span>
+    <h2>PROJECTS</h2>
+    <span class="line"></span>
+  </div>
+</div>
+
+
+<section class="project-section">
+  
+  <div class="project-box" style="margin-top: 40px;">
+    <div class="project-image">
+      <img src="assets/projects/IMG-20250727-WA0004~2.jpg" alt="bhimtal project image">
+    </div>
+    <div class="project-content">
+      <div class="project-text-wrapper">
+        <h3 class="project-title">Bhimtal Project, Uttrakhand</h3>
+        <p class="project-description">
+          A spacious, modern pool constructed for a luxury hill resort, designed with deep blue tiling and sleek glass fencing to offer guests a serene and scenic leisure experience amidst nature.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-box-alt">
+    <div class="project-content-alt">
+      <div class="project-text-wrapper-alt">
+        <h3 class="project-title-alt">Nehru Place Project, New Delhi</h3>
+        <p class="project-description-alt">
+          A series of sleek vertical jet fountains designed to enhance the ambience of a public commercial area with a modern and refreshing aesthetic.
+        </p>
+      </div>
+    </div>
+    <div class="project-image-alt">
+      <img src="assets/projects/IMG-20250727-WA0006~2.jpg" alt="Nehru Place project image">
+    </div>
+  </div>
+
+  <div class="project-box" style="margin-bottom: 40px;">
+    <div class="project-image">
+      <img src="assets/projects/IMG-20250727-WA0005~2.jpg" alt="Nainital project image">
+    </div>
+    <div class="project-content">
+      <div class="project-text-wrapper">
+        <h3 class="project-title">Nainital Project, Uttrakhand</h3>
+        <p class="project-description">
+          A compact and elegant private pool built with ambient lighting and stone finish, designed to bring luxury and relaxation to a personal backyard retreat.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-notice">
+    <p class="project-notice-content">more project will be added soon...</p>
+  </div>
+
+</section>
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <h3>sanengineerings.co.in</h3>
+  </div>
+  <div class="footer-bottom">
+    <p class="left">&copy; 2025 SAN ENGINEERINGS. All rights reserved.</p>
+    <div class="right">
+      <p class="developed">Developed by</p>
+      <p class="developer"><strong>ADITYA NAYAK</strong></p>
+      </div>
+  </div>
+</footer>
+
+<!-- Slide-out menu panel -->
+<div class="side-menu" id="side-menu">
+  <div class="side-menu-header">
+    <span class="close-icon" id="close-icon">&times;</span>
+  </div>
+
+  <div class="side-menu-body">
+    <ul class="side-menu-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="projects.html"><strong>PROJECTS</strong></a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const sideMenu = document.getElementById('side-menu');
+
+  menuIcon.addEventListener('click', () => {
+    sideMenu.classList.add('open');
+  });
+
+  closeIcon.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+  });
+</script>
+
+</body>
+</html>

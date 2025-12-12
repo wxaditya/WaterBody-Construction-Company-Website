@@ -1,19 +1,12 @@
-
+/*============================================= Universal Style for website ========================================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#main-content {
-  animation: fadeInContent 0.2s ease-in-out;
-}
-
-@keyframes fadeInContent {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
+/*========================================================== INDEX PAGE ============================================================= */
+/* Splach Screen */
 #splash-screen {
   position: fixed;
   top: 0; left: 0;
@@ -72,6 +65,15 @@
   }
 }
 
+@keyframes fadeInContent {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#main-content {
+  animation: fadeInContent 0.2s ease-in-out;
+}
+
 .logo-container {
   text-align: center;
   margin: 40px 0 20px 0; /* Gives room from the top of the page */
@@ -95,7 +97,7 @@
   font-family: 'Arial';
 }
 
-
+/*------------------------------ NavBar ---------------------------------------*/
 .navbar {
   background-color: #001d9e;
   padding: 10px 0;
@@ -105,7 +107,6 @@
   overflow: hidden; /* Prevent content from pushing height */
 }
 
-
 .navbar ul {
   display: flex;
   justify-content: center; /* 🎯 Center everything */
@@ -114,7 +115,6 @@
   padding: 0;
   margin: 0;
 }
-
 
 .navbar li {
   display: inline-block;
@@ -307,7 +307,6 @@
   margin-bottom: 25px;
 }
 
-/* Match your previous button style */
 .contact-button {
   display: inline-block;
   padding: 12px 24px;
@@ -324,7 +323,7 @@
   transform: scale(1.1);
 }
 
-
+/*========================================================== FOOTER SECTION ========================================================== */
 .footer {
   background-color: #0b0032; /* Dark blue */
   color: white;
@@ -343,6 +342,10 @@
   letter-spacing: 1px;
 }
 
+.footer-top h3 a {
+  color: white;
+  text-decoration: none;
+}
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -409,6 +412,9 @@
 
 }
 
+
+
+/*========================================================== ABOUT PAGE ============================================================= */
 .about-header {
   display: flex;
   justify-content: space-between;
@@ -559,7 +565,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1000px; /* Optional: limit width */
+  max-width: 1000px; 
   padding: 0 20px;    /* Margin on both sides */
   box-sizing: border-box;
 }
@@ -741,19 +747,21 @@
   background-color: #001d9e;
   color: #fff;
   .tick {
-  color:#ffffff; /* ✅ Green tick — change to any color you like */
+  color:#ffffff; 
   font-weight: bold;
   margin-right: 10px;
 }
 }
 
 .tick {
-  color:#001d9e; /* ✅ Green tick — change to any color you like */
+  color:#001d9e; 
   font-weight: bold;
   margin-right: 10px;
 }
 
 
+
+/*========================================================== SERVICES PAGE ============================================================= */
 .services-section{
   background-image: url('../assets/miho-bakalic-9vuFMJztLlI-unsplash.jpg'); 
   background-attachment: fixed; 
@@ -970,6 +978,8 @@
 }
 
 
+
+/*========================================================== PROJECT PAGE ============================================================= */
 .project-section {
   background-image: url('../assets/nathan-dumlao-yI46RxiFeQw-unsplash.jpg'); 
   background-attachment: fixed; 
@@ -1199,6 +1209,9 @@
 }
 }
 
+
+
+/*========================================================== CONTACT PAGE ============================================================= */
 .contact-hero {
   background-image: url('../assets/asia-culturecenter-8F7Bs-jgwLw-unsplash.jpg'); 
   background-size: cover;
